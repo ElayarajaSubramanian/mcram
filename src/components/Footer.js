@@ -7,7 +7,9 @@ import MapIcon from "../assets/images/map-icon.svg"
 const Footer = () => {
   return (
     <footer className='about__footer'>
-        <img src={Logo} alt='logo'/>
+        <div>
+            <img src={Logo} alt='logo'/>
+        </div>
         <div>
             <h2>Reach us</h2>
             <div className='py-6 flex flex-col gap-4'>
