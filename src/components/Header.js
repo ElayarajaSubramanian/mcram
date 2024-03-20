@@ -1,12 +1,12 @@
 import React from 'react'
-import Logo from "../assets/images/logo.svg"
+import Logo from "../assets/images/logo.png"
 
 const Header = () => {
   return (
     <div className='header'>
         <div className='container h-full'>
             <div className='flex gap-40 items-center h-full'>
-                <img src={Logo}/>
+                <img src={Logo} alt='logo'/>
                 <nav className='nav'>
                   <ul>
                     <li><a href=''>Home</a></li>

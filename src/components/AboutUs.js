@@ -22,7 +22,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <img src={BannerImg} />
+            <img src={BannerImg} alt="banner"/>
         </div>
         <div className='about__services'>
             <div className='about__servicesbox'>
@@ -57,40 +57,40 @@ const AboutUs = () => {
         <div className='flex justify-between gap-16'>
             <div className='about__expertise about__expertise--greenbg'>
                 <div className='flex flex-col gap-4 pb-5'>
-                    <img src={ExpertiseIcon} className='about__expertise--icon'/>
+                    <img src={ExpertiseIcon} className='about__expertise--icon' alt='expertise'/>
                     <h3>Pertroleum & Gas Energy</h3>
                     <p>Lorem ipsum dolor sit amet consectetur. Enim congue malesuada sed sit ligula amet. Elementum amet risus fringilla tristique in ut.</p>
                 </div>
                 <div className='about__expertise--btnsec about__expertise--whitebrd'>
                     <button className='about__readbtn about__readbtn--whitebg'>Read more</button>
                     <button>
-                        <img src={ArrowBlack}/>
+                        <img src={ArrowBlack} alt='arrow'/>
                     </button>
                 </div>
             </div>
             <div className='about__expertise about__expertise--whitebg'>
                 <div className='flex flex-col gap-4 pb-5'>
-                    <img src={ExpertiseGreenIcon} className='about__expertise--icon'/>
+                    <img src={ExpertiseGreenIcon} className='about__expertise--icon' alt='expertise green'/>
                     <h3>Pertroleum & Gas Energy</h3>
                     <p>Lorem ipsum dolor sit amet consectetur. Enim congue malesuada sed sit ligula amet. Elementum amet risus fringilla tristique in ut.</p>
                 </div>
                 <div className='about__expertise--btnsec about__expertise--blackbrd'>
                     <button className='about__readbtn about__readbtn--whitebg'>Read more</button>
                     <button>
-                        <img src={ArrowGreen}/>
+                        <img src={ArrowGreen} alt='arrow'/>
                     </button>
                 </div>
             </div>
             <div className='about__expertise about__expertise--whitebg'>
                 <div className='flex flex-col gap-4 pb-5'>
-                    <img src={ExpertiseGreenIcon} className='about__expertise--icon'/>
+                    <img src={ExpertiseGreenIcon} className='about__expertise--icon' alt='expertise'/>
                     <h3>Pertroleum & Gas Energy</h3>
                     <p>Lorem ipsum dolor sit amet consectetur. Enim congue malesuada sed sit ligula amet. Elementum amet risus fringilla tristique in ut.</p>
                 </div>
                 <div className='about__expertise--btnsec about__expertise--blackbrd'>
                     <button className='about__readbtn about__readbtn--whitebg'>Read more</button>
                     <button>
-                        <img src={ArrowGreen}/>
+                        <img src={ArrowGreen} alt='arrow'/>
                     </button>
                 </div>
             </div>
