@@ -141,7 +141,10 @@
         }
         p{
             line-height: 28px;
-            min-height: 140px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
         }
     }
     &__readbtn{
@@ -191,5 +194,23 @@
         flex-direction: column;
         gap: 30px;
         padding: 75px 0 40px 0;
+        &--content{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #F0F0F0;
+            padding: 10px;
+            gap:1rem;
+            p{
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.45);
+            }
+        }
+    }
+    &__clients{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 88%;
+        margin: 0 auto;
     }
 }

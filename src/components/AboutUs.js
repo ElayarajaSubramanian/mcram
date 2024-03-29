@@ -7,6 +7,14 @@ import ArrowGreen from "../assets/images/arrow-green.svg"
 import ExpertiseGreenIcon from "../assets/images/expertise-green.svg"
 import SliderImg from "../assets/images/slider-img.jpg"
 import ChevronBlack from "../assets/images/chevron-black.svg"
+import ArrowLeft from "../assets/images/arrow-left.svg"
+import ArrowRight from "../assets/images/arrow-right.svg"
+import Client1 from "../assets/images/client-1.png"
+import Client2 from "../assets/images/client-2.png"
+import Client3 from "../assets/images/client-3.png"
+import Client4 from "../assets/images/client-4.png"
+import Client5 from "../assets/images/client-5.png"
+import Client6 from "../assets/images/client-6.png"
 
 const AboutUs = () => {
   return (
@@ -114,46 +122,57 @@ const AboutUs = () => {
             </div>
         </div>
         <div className='about__activities'>
-        <h2 className='about__h2'>Activities<br/><span className='about__line'></span></h2>
-        <div className='flex justify-between gap-4 w-[80%] mx-auto my-0'>
-            <div className='flex flex-col gap-4'>
-                <img src={SliderImg} alt='slider'/>
-                <div className='flex flex-col gap-4'>
-                    <div>
-                        <h3>Lorem ipsum dolor sit amet </h3>
+            <h2 className='about__h2'>Activities<br/><span className='about__line'></span></h2>
+            <div className='container flex items-center justify-center'>
+                <a><img src={ArrowLeft}/></a>
+                <div className='flex justify-between gap-4 w-[80%]'>
+                    <div className='flex flex-col'>
+                        <img src={SliderImg} alt='slider'/>
+                        <div className='about__activities--content'>
+                            <div>
+                                <h3>Lorem ipsum dolor sit amet </h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
+                        </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
-                </div>
-            </div>
-            <div className='flex flex-col gap-4'>
-                <img src={SliderImg} alt='slider'/>
-                <div className='flex flex-col gap-4'>
-                    <div>
-                        <h3>Lorem ipsum dolor sit amet </h3>
+                    <div className='flex flex-col'>
+                        <img src={SliderImg} alt='slider'/>
+                        <div className='about__activities--content'>
+                            <div>
+                                <h3>Lorem ipsum dolor sit amet </h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
+                        </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
-                </div>
-            </div>
-            <div className='flex flex-col gap-4'>
-                <img src={SliderImg} alt='slider'/>
-                <div className='flex flex-col gap-4'>
-                    <div>
-                        <h3>Lorem ipsum dolor sit amet </h3>
+                    <div className='flex flex-col'>
+                        <img src={SliderImg} alt='slider'/>
+                        <div className='about__activities--content'>
+                            <div>
+                                <h3>Lorem ipsum dolor sit amet </h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
+                        </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
-                </div>
-            </div>
-            <div className='flex flex-col gap-4'>
-                <img src={SliderImg} alt='slider'/>
-                <div className='flex flex-col gap-4'>
-                    <div>
-                        <h3>Lorem ipsum dolor sit amet </h3>
+                    <div className='flex flex-col'>
+                        <img src={SliderImg} alt='slider'/>
+                        <div className='about__activities--content'>
+                            <div>
+                                <h3>Lorem ipsum dolor sit amet </h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
+                        </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
                 </div>
+                <a><img src={ArrowRight}/></a>
             </div>
-
         </div>
+        <div className='about__clients'>
+            <img src={Client1}/>
+            <img src={Client2}/>
+            <img src={Client3}/>
+            <img src={Client4}/>
+            <img src={Client5}/>
+            <img src={Client6}/>
         </div>
     </div>
   )
