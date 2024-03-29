@@ -13,15 +13,18 @@ const AboutUs = () => {
     <div className='container py-10'>
         <div className='flex justify-center gap-5'>
             <div className='flex flex-col gap-6'>
-                <h2 className='about__h2'>About us</h2>
-                <h3 className='about__h3'>McRam is an organization providing extensive services </h3>
-                <div className='flex justify-between gap-6 px-6'>
-                    <p className='font-semibold flex-1'>To further develop our association, we have established a corporate directive to maintain quality and innovative solutions is our core philosophy.</p>
-                    <div className='flex-1'>
-                        <p>Always believe on Optimized and innovative process to meet the customer requirements in a faster, better and quality to become an empowered consultant in the piping industries more than a job, we work for environmental safety and keeping people and operations safe and sounds by adapting Go Green</p>
-                        <button className='about__btn mt-8'>Have A projects</button>
-                    </div>
+                <h2 className='about__h2'>About us<br/><span className='about__line'></span></h2>
+                <div className='flex flex-col gap-6'>
+                    <h3 className='about__h3'>Innovation in every design<br/></h3>
+                    <p className='leading-8'>McRam Engineering is an organization providing extensive services for piping engineering of Energy, Oil & Gas and power industries.<br/>To further develop our association, we have established a corporate directive to maintain quality and innovative solutions is our core philosophy.
+                    </p>
                 </div>
+                <div className='flex flex-col gap-6'>
+                    <h3 className='about__h3'>Our values</h3>
+                    <p className='leading-8'>Always believe on Optimized and innovative process to meet the customer requirements in a faster and better quality to become an empowered consultant in the piping industries.<br/>More than a job, we work for environmental safety and keeping people and operations safe and sounds by adapting  Go Green
+                    </p>
+                </div>
+                
             </div>
             <img src={BannerImg} alt="banner"/>
         </div>
@@ -52,15 +55,16 @@ const AboutUs = () => {
             </div>
         </div>
         <div className='container text-center flex gap-8 flex-col py-8 justify-center items-center'>
-            <p className='text-xl'>Lorem ipsum dolor sit amet consectetur.</p>
-            <p className='font-semibold text-3xl w-[70%]'>Lorem ipsum dolor sit amet consectetur Enim congue malesuada .</p>
+            <p className='text-xl'>Engineering excellence for a better tommorow</p>
+            <p className='font-semibold text-3xl w-[70%]'>Providing solutions for Onshore and Offshore plant design for</p>
         </div>
-        <div className='flex justify-between gap-16 w-[80%] mx-auto my-0'>
+        <div className='grid grid-cols-4 gap-12 w-[80%] mx-auto my-0'>
             <div className='about__expertise about__expertise--greenbg'>
                 <div className='flex flex-col gap-4 pb-5'>
                     <img src={ExpertiseIcon} className='about__expertise--icon' alt='expertise'/>
-                    <h3>Pertroleum & Gas Energy</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Enim congue malesuada sed sit ligula amet. Elementum amet risus fringilla tristique in ut.</p>
+                    <h3>Onshore E&C
+</h3>
+                    <p>Our skills and what we provide includes concept, feasibility Studies, design -engineering of the all Onshore plants...</p>
                 </div>
                 <div className='about__expertise--btnsec about__expertise--whitebrd'>
                     <button className='about__readbtn about__readbtn--whitebg'>Read more</button>
@@ -72,8 +76,8 @@ const AboutUs = () => {
             <div className='about__expertise about__expertise--whitebg'>
                 <div className='flex flex-col gap-4 pb-5'>
                     <img src={ExpertiseGreenIcon} className='about__expertise--icon' alt='expertise green'/>
-                    <h3>Pertroleum & Gas Energy</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Enim congue malesuada sed sit ligula amet. Elementum amet risus fringilla tristique in ut.</p>
+                    <h3>Offshore E&C</h3>
+                    <p>McRam engineering is specialized in providing development concepts and technical solutions to the upstream oil and gas industry...</p>
                 </div>
                 <div className='about__expertise--btnsec about__expertise--blackbrd'>
                     <button className='about__readbtn about__readbtn--whitebg'>Read more</button>
@@ -85,8 +89,8 @@ const AboutUs = () => {
             <div className='about__expertise about__expertise--whitebg'>
                 <div className='flex flex-col gap-4 pb-5'>
                     <img src={ExpertiseGreenIcon} className='about__expertise--icon' alt='expertise'/>
-                    <h3>Pertroleum & Gas Energy</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Enim congue malesuada sed sit ligula amet. Elementum amet risus fringilla tristique in ut.</p>
+                    <h3>Brown Field Engineering </h3>
+                    <p>3D Laser Scanning is a non- contact, non-destructive technology that digitally captures the shape of physical...</p>
                 </div>
                 <div className='about__expertise--btnsec about__expertise--blackbrd'>
                     <button className='about__readbtn about__readbtn--whitebg'>Read more</button>
@@ -109,23 +113,16 @@ const AboutUs = () => {
                 </div>
             </div>
         </div>
-        <div className='container text-center flex gap-8 flex-col py-8 justify-center items-center'>
-            <p className='text-xl'>Lorem ipsum dolor sit amet consectetur.</p>
-            <p className='font-semibold text-3xl w-[70%]'>Lorem ipsum dolor sit amet consectetur Enim congue malesuada .</p>
-        </div>
+        <div className='about__activities'>
+        <h2 className='about__h2'>Activities<br/><span className='about__line'></span></h2>
         <div className='flex justify-between gap-4 w-[80%] mx-auto my-0'>
             <div className='flex flex-col gap-4'>
                 <img src={SliderImg} alt='slider'/>
                 <div className='flex flex-col gap-4'>
                     <div>
                         <h3>Lorem ipsum dolor sit amet </h3>
-                        <p className='text-limegreen text-xs'>Lorem ipsum dolor sit amet </p>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
-                </div>
-                <div className='flex gap-5'>
-                    <span className='text-limegreen'>Explore More</span>
-                    <img src={ChevronBlack} alt='chevron'/>
                 </div>
             </div>
             <div className='flex flex-col gap-4'>
@@ -133,13 +130,8 @@ const AboutUs = () => {
                 <div className='flex flex-col gap-4'>
                     <div>
                         <h3>Lorem ipsum dolor sit amet </h3>
-                        <p className='text-limegreen text-xs'>Lorem ipsum dolor sit amet </p>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
-                </div>
-                <div className='flex gap-5'>
-                    <span className='text-limegreen'>Explore More</span>
-                    <img src={ChevronBlack} alt='chevron'/>
                 </div>
             </div>
             <div className='flex flex-col gap-4'>
@@ -147,13 +139,8 @@ const AboutUs = () => {
                 <div className='flex flex-col gap-4'>
                     <div>
                         <h3>Lorem ipsum dolor sit amet </h3>
-                        <p className='text-limegreen text-xs'>Lorem ipsum dolor sit amet </p>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
-                </div>
-                <div className='flex gap-5'>
-                    <span className='text-limegreen'>Explore More</span>
-                    <img src={ChevronBlack} alt='chevron'/>
                 </div>
             </div>
             <div className='flex flex-col gap-4'>
@@ -161,16 +148,12 @@ const AboutUs = () => {
                 <div className='flex flex-col gap-4'>
                     <div>
                         <h3>Lorem ipsum dolor sit amet </h3>
-                        <p className='text-limegreen text-xs'>Lorem ipsum dolor sit amet </p>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
-                </div>
-                <div className='flex gap-5'>
-                    <span className='text-limegreen'>Explore More</span>
-                    <img src={ChevronBlack} alt='chevron'/>
                 </div>
             </div>
 
+        </div>
         </div>
     </div>
   )
