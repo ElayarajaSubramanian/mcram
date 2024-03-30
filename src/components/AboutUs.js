@@ -15,6 +15,11 @@ import Client3 from "../assets/images/client-3.png"
 import Client4 from "../assets/images/client-4.png"
 import Client5 from "../assets/images/client-5.png"
 import Client6 from "../assets/images/client-6.png"
+import QualityIcon from "../assets/images/quality-icon.svg"
+import HealthIcon from "../assets/images/health-icon.svg"
+import SafetyIcon from "../assets/images/safety-icon.svg"
+import EnvironmentIcon from "../assets/images/environment-icon.svg"
+import GreenIcon from "../assets/images/green-icon.svg"
 
 const AboutUs = () => {
   return (
@@ -36,37 +41,35 @@ const AboutUs = () => {
             </div>
             <img src={BannerImg} alt="banner"/>
         </div>
-        <div className='about__services'>
-            <div className='about__servicesbox'>
-                <img src={AboutIcon} alt='Services'/>
-                <p className='font-semibold'>Professional & Qualified</p>
-            </div>
-            <div className='about__servicesbox'>
-                <img src={AboutIcon} alt='Services'/>
-                <p className='font-semibold'>Professional Solution</p>
-            </div>
-            <div className='about__servicesbox'>
-                <img src={AboutIcon} alt='Services'/>
-                <p className='font-semibold'>100% Satisfaction</p>
-            </div>
-            <div className='about__servicesbox'>
-                <img src={AboutIcon} alt='Services'/>
-                <p className='font-semibold'>100% Satisfaction</p>
-            </div>
-            <div className='about__servicesbox'>
-                <img src={AboutIcon} alt='Services'/>
-                <p className='font-semibold'>100% Satisfaction</p>
-            </div>
-            <div className='about__servicesbox'>
-                <img src={AboutIcon} alt='Services'/>
-                <p className='font-semibold'>Accurate Testing</p>
+        <div className='flex justify-center'>
+            <div className='about__services'>
+                <div className='about__servicesbox'>
+                    <img src={QualityIcon} alt='Services'/>
+                    <p>Quality</p>
+                </div>
+                <div className='about__servicesbox'>
+                    <img src={HealthIcon} alt='Services'/>
+                    <p>Health</p>
+                </div>
+                <div className='about__servicesbox'>
+                    <img src={SafetyIcon} alt='Services'/>
+                    <p>Safety</p>
+                </div>
+                <div className='about__servicesbox'>
+                    <img src={EnvironmentIcon} alt='Services'/>
+                    <p>Environment</p>
+                </div>
+                <div className='about__servicesbox'>
+                    <img src={GreenIcon} alt='Services'/>
+                    <p>Green Energy</p>
+                </div>
             </div>
         </div>
         <div className='container text-center flex gap-8 flex-col py-8 justify-center items-center'>
             <p className='text-xl'>Engineering excellence for a better tommorow</p>
             <p className='font-semibold text-3xl w-[70%]'>Providing solutions for Onshore and Offshore plant design for</p>
         </div>
-        <div className='grid grid-cols-4 gap-12 w-[80%] mx-auto my-0'>
+        <div className='grid grid-cols-4 gap-12 w-[88%] mx-auto my-0'>
             <div className='about__expertise about__expertise--greenbg'>
                 <div className='flex flex-col gap-4 pb-5'>
                     <img src={ExpertiseIcon} className='about__expertise--icon' alt='expertise'/>
@@ -123,8 +126,8 @@ const AboutUs = () => {
         </div>
         <div className='about__activities'>
             <h2 className='about__h2'>Activities<br/><span className='about__line'></span></h2>
-            <div className='container flex items-center justify-center'>
-                <a><img src={ArrowLeft}/></a>
+            <div className='container flex items-center justify-center gap-6'>
+                <button className='about__arrow'><img src={ArrowLeft}/></button>
                 <div className='flex justify-between gap-4 w-[80%]'>
                     <div className='flex flex-col'>
                         <img src={SliderImg} alt='slider'/>
@@ -163,7 +166,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <a><img src={ArrowRight}/></a>
+                <button className='about__arrow'><img src={ArrowRight}/></button>
             </div>
         </div>
         <div className='about__clients'>
