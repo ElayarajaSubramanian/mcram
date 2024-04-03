@@ -12,6 +12,7 @@
     transition: all 100ms ease-in;
     &.scrolled{
         background-color: #fff;
+        box-shadow: 5px 2px 8px #ccc;
         .nav{
             ul{
                 li{
