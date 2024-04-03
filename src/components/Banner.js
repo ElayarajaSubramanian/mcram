@@ -1,19 +1,27 @@
-import React from 'react'
+import React from 'react';
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import Slider from "react-slick";
+import Video1 from "../assets/videos/video1.mp4"
+import Banner1 from "../assets/images/banner.jpg"
+import Banner2 from "../assets/images/banner2.jpg"
 
-const Banner = () => {
+const Banner = () =>{
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed:2500,
+  };
   return (
-    <div className='banner'>
-        <div className='banner__overlay'>
-            <div className='w-[84%] mx-auto my-0 h-full flex items-center'>
-                <div className='flex flex-col gap-10 justify-start'>
-                    <h1 className='banner__h1'>Provide better Engineering Solution </h1>
-                    <p>Provide better Engineering Solution for Energy and Oil & Gas field</p>
-                    <button className='banner__btn'>About Us</button>
-                </div>
-            </div>
-        </div>
-    </div>
-  )
+    <Slider {...settings}>
+      <img src={Banner1} />
+      <img src={Banner2} />
+    </Slider>
+  );
 }
 
 export default Banner

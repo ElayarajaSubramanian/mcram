@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <div className={`header ${scrolling ? 'scrolled' : ''}`}>
         <div className='container h-full'>
-            <div className='flex gap-40 items-center h-full'>
+            <div className='flex gap-64 items-center h-full'>
                 <img src={Logo} alt='logo' className='header__logo header__logo1'/>
                 <img src={Logo2} className='header__logo header__logo2'/>
                 <nav className='nav'>
